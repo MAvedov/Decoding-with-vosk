@@ -136,7 +136,7 @@ for i in id_f:
         df = pd.DataFrame(df, columns = ['Id','last_name','name_records','Text'])
         print(df)
         print('Запись расшифрована и записана!')
-        df.to_sql('bi_decoding_rec', con = engine, if_exists = 'append', index = False)
+        df.to_sql('bi_decoding_rec', con = engine, if_exists = 'append', index = False) # write data to database
         z+=1
         print(z)
     else: 
